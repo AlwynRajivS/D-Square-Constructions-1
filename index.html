@@ -83,6 +83,7 @@
 
 .service-container, .chooseus-container {
             display: grid;
+grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             width: 80%;
             margin: 20px auto;
@@ -176,6 +177,9 @@
                 width: 50%;
                 background: rgba(17, 17, 17, 0.9);
 z-index:1000;
+            }
+ service-container, .chooseus-container {
+                grid-template-columns: 1fr;
             }
             .navbar a {
                 padding: 15px;
