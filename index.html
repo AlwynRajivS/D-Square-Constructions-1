@@ -80,27 +80,25 @@
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
         }
-        .services, .why-choose-us {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            flex-wrap: wrap;
+
+.service-container, .chooseus-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+            width: 80%;
+            margin: 20px auto;
         }
-        .service-item, .choose-item {
-            background: rgba(51, 52, 53, 0.8);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: 100%;
-            max-width: 300px;
+
+        .service-item, .chooseus-item {
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            transition: transform 0.3s ease-in-out;
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
         }
+
+   
         .service-item span, .choose-item span {
             display: flex;
             justify-content: center;
@@ -211,7 +209,7 @@ z-index:1000;
     </div>
     <div class="container">
         <h2 id="services"> Our Services</h2>
-        <div class="services">
+        <div class="service-container">
             <div class="service-item"><span>🏠</span>Plan and Elevations</div>
             <div class="service-item"><span>📜</span>Plan Approvals</div>
             <div class="service-item"><span>🗣️💼</span>Consulting</div>
@@ -220,7 +218,7 @@ z-index:1000;
             <div class="service-item"><span>🛋️</span>Interior Works</div>
         </div>
         <h2 id="why-choose-us">Why Choose Us</h2>
-        <div class="why-choose-us">
+        <div class="chooseus-container">
             <div class="choose-item"><span>💰</span>Quality Work</div>
             <div class="choose-item"><span>💰</span>Budget Friendly</div>
             <div class="choose-item"><span>⏳</span>Timely Completion</div>
